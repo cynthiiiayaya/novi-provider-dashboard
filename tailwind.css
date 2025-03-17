@@ -1,0 +1,145 @@
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --body-caption2-font-family: "Inter", Helvetica;
+  --body-caption2-font-size: 12px;
+  --body-caption2-font-style: normal;
+  --body-caption2-font-weight: 400;
+  --body-caption2-letter-spacing: 0px;
+  --body-caption2-line-height: 150%;
+  --body-paragraph1-font-family: "Inter", Helvetica;
+  --body-paragraph1-font-size: 16px;
+  --body-paragraph1-font-style: normal;
+  --body-paragraph1-font-weight: 400;
+  --body-paragraph1-letter-spacing: -0.17600000381469727px;
+  --body-paragraph1-line-height: 150%;
+  --body-paragraph2-font-family: "Inter", Helvetica;
+  --body-paragraph2-font-size: 14px;
+  --body-paragraph2-font-style: normal;
+  --body-paragraph2-font-weight: 500;
+  --body-paragraph2-letter-spacing: -0.15400000333786015px;
+  --body-paragraph2-line-height: 150%;
+  --brandbrandyellow-01: rgba(255, 206, 45, 1);
+  --neutralsneutrals-101: rgba(255, 255, 255, 1);
+  --neutralsneutrals-501: rgba(28, 30, 39, 1);
+  --paragraph-body-2-font-family: "Inter", Helvetica;
+  --paragraph-body-2-font-size: 14px;
+  --paragraph-body-2-font-style: normal;
+  --paragraph-body-2-font-weight: 400;
+  --paragraph-body-2-letter-spacing: 0.01999999955296516px;
+  --paragraph-body-2-line-height: 21px;
+  --paragraph-caption-1-font-family: "Inter", Helvetica;
+  --paragraph-caption-1-font-size: 12px;
+  --paragraph-caption-1-font-style: normal;
+  --paragraph-caption-1-font-weight: 400;
+  --paragraph-caption-1-letter-spacing: 0.009999999776482582px;
+  --paragraph-caption-1-line-height: 18px;
+  --paragraph-caption-1-strong-font-family: "Inter", Helvetica;
+  --paragraph-caption-1-strong-font-size: 12px;
+  --paragraph-caption-1-strong-font-style: normal;
+  --paragraph-caption-1-strong-font-weight: 500;
+  --paragraph-caption-1-strong-letter-spacing: 0.009999999776482582px;
+  --paragraph-caption-1-strong-line-height: 18px;
+  --paragraph-caption-2-font-family: "Inter", Helvetica;
+  --paragraph-caption-2-font-size: 10px;
+  --paragraph-caption-2-font-style: normal;
+  --paragraph-caption-2-font-weight: 500;
+  --paragraph-caption-2-letter-spacing: 0.009999999776482582px;
+  --paragraph-caption-2-line-height: 13px;
+  --primaryimpacthigh-01: rgba(226, 120, 116, 1);
+  --primaryimpacthigh-03: rgba(168, 57, 54, 1);
+  --primaryimpactlow-03: rgba(35, 154, 132, 1);
+  --primaryimpactmoderate-01: rgba(248, 210, 152, 1);
+  --primaryimpactmoderate-03: rgba(245, 179, 77, 1);
+  --surfacesurfaceelevation-0: rgba(243, 243, 246, 1);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 47.4% 11.2%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+
+    --card: transparent;
+    --card-foreground: 222.2 47.4% 11.2%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 215 20.2% 65.1%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 224 71% 4%;
+    --foreground: 213 31% 91%;
+
+    --muted: 223 47% 11%;
+    --muted-foreground: 215.4 16.3% 56.9%;
+
+    --accent: 216 34% 17%;
+    --accent-foreground: 210 40% 98%;
+
+    --popover: 224 71% 4%;
+    --popover-foreground: 215 20.2% 65.1%;
+
+    --border: 216 34% 17%;
+    --input: 216 34% 17%;
+
+    --card: transparent;
+    --card-foreground: 213 31% 91%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 1.2%;
+
+    --secondary: 222.2 47.4% 11.2%;
+    --secondary-foreground: 210 40% 98%;
+
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+
+    --ring: 216 34% 17%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
